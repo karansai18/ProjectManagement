@@ -68,4 +68,5 @@ const TeamInvite = () => {
     )
 }
 
+
 export default TeamInvite

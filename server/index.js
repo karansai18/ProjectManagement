@@ -18,6 +18,15 @@ const corsConfig = {
     origin: true,
 };
 app.use(cors(corsConfig));
+
+// const corsOptions = {
+//     origin: function(origin, callback) {
+//         callback(null, true);
+//     },
+//     credentials: true,
+// };
+
+app.use(cookieParser());
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
 

@@ -59,7 +59,7 @@ export const removeMembers = async (id, members,token) => await API.patch(`/proj
 
 
 //teams api
-export const createTeam = async (team,token) => await API.post('team/', team,{ headers: { "Authorization" : `Bearer ${token}` }},{ withCredentials: true });
+export const createTeam = async (team,token) => await API.post('/team', team,{ headers: { "Authorization" : `Bearer ${token}` }},{ withCredentials: true });
 export const getTeams = async (id,token) => await API.get(`/team/${id}`,{ headers: { "Authorization" : `Bearer ${token}` }},{ withCredentials: true });
 export const inviteTeamMembers = async (id, members,token) => await API.post(`/team/invite/${id}`, members,{ headers: { "Authorization" : `Bearer ${token}` }},{ withCredentials: true });
 export const addTeamProject = async (id, project,token) => await API.post(`/team/addProject/${id}`, project,{ headers: { "Authorization" : `Bearer ${token}` }},{ withCredentials: true });

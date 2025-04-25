@@ -281,7 +281,7 @@ const SignUp = ({ setSignUpOpen, setSignInOpen }) => {
     }
   };
 
-  //Google SignIn
+  
   const googleLogin = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
       setLoading(true);

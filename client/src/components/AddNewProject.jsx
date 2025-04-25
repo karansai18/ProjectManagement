@@ -294,7 +294,7 @@ const AddNewProject = ({ setNewProject, teamId, teamProject }) => {
     setShowAddMember(true);
   };
 
-  //add member part
+  
 
   const [search, setSearch] = React.useState("");
   const [users, setUsers] = React.useState([]);
